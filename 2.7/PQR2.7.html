@@ -684,7 +684,7 @@ Useful links :
 <!-- SEQUENCES -->
 <h3> <a id="Sequences" name="Sequences"></a>Sequences </h3>
 <blockquote>
-  Strings and tuples are <u>immutable</u>, lists are <u>mutable</u>.
+  Stringsï¿½andï¿½tuplesï¿½areï¿½<u>immutable</u>, lists are <u>mutable</u>.
   <ul>
     <li> <b>Strings</b> (types <code>str</code> and <code>unicode</code>) of length 0, 1, 2 (see <a href="#Strings">above</a>) <br />
           &nbsp;&nbsp;'', '1', &quot;12&quot;, 'hello\n' </li>
@@ -2216,8 +2216,8 @@ assert jdoe[2] == jdoe.age == 30
 # Convert instance to dict:
 assert jdoe._asdict() == {'age': 30, 'name': 'Doe', 'firstName': 'John'}
 
-# Although tuples are normally immutable, one can change field values via _replace():
-jdoe._replace(age=25, firstName='Jane')
+# _replace() can be used to get a new tuple with replaced field values:
+jdoe = jdoe._replace(age=25, firstName='Jane')
 assert str(jdoe) == &quot;person(name='Doe', firstName='Jane', age=25)&quot; </pre>
 	</blockquote>
 </div>
@@ -5137,7 +5137,7 @@ High-level file operations (copying, deleting).
 	       make_archive(<i>base_name</i>, <i>format</i> [,&nbsp;<i>root_dir</i> [,&nbsp;<i>base_dir</i> 
 		   [,&nbsp;<i>verbose</i> [,&nbsp;<i>dry_run</i> [,&nbsp;<i>owner</i> [,&nbsp;<i>group</i> [,&nbsp;<i>logger</i>]]]]]]])</td>
 	  <td class="since27"> Create an archive file (eg. zip or tar) and returns its name. 
-		   <i>base_name</i> is the name of the file to create, including the path, minus any format-specific extension. <i>format</i> is the archive format: one of “zip”, “tar”, “bztar” or “gztar”.
+		   <i>base_name</i> is the name of the file to create, including the path, minus any format-specific extension. <i>format</i> is the archive format: one of ï¿½zipï¿½, ï¿½tarï¿½, ï¿½bztarï¿½ or ï¿½gztarï¿½.
 		   <i>root_dir</i> is a directory that will be the root directory of the archive; ie. we typically chdir into root_dir before creating the archive.
 		   <i>base_dir</i> is the directory where we start archiving from; ie. <i>base_dir</i> will be the common prefix of all files and directories in the archive.
 		   <i>root_dir</i> and <i>base_dir</i> both default to the current directory.
@@ -7189,7 +7189,7 @@ Built-ins and content of python <code><b>Lib</b></code> directory. The subdirect
     </tr>
 	<tr class="since27">
 	  <td> <a href="http://docs.python.org/2.7/library/sysconfig.html"> sysconfig </a> </td>
-	  <td> Provides access to Python’s configuration information like the list of installation paths 
+	  <td> Provides access to Pythonï¿½s configuration information like the list of installation paths 
 		   and the configuration variables relevant for the current platform.</td>
 	</tr>
     <tr>
